@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        body {
+            /* height:
+100vh; display:
+flex;
+align-items: center; */
+            background: linear-gradient(to top left, #aa4d28, #7dd56f);
+        }
+
+        h1 {
+            font-family: sansserif;
+            font-size: 50px;
+            /* line-height: 1.3; */
+            width: 100%;
+            padding: 3px;
+            text-align:
+                center;
+            color:
+                white;
+        }
+
+        p {
+            font-family: sansserif;
+            font-size: 30px;
+            line-height: 1.3;
+            width: 100%;
+            /* padding: 30px; */
+            /* text-align: center;
+*/
+            color: white;
+        }
+
+        button {
+            width: 50px;
+            height: 20px;
+            margin: 10px;
+        }
+
+        textarea {
+            width:
+                300px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="post" target="#" onsubmit="return validate()">
+        <h1>Sign up</h1>
+        <p>The form below will allow you to create
+            a new account if you don't have one yet.</p>
+        Name<br>
+        <input type="text" name="name"><br> Address<br>
+        <textarea name="address" id="address" rows="4" cols="50"></textarea><br> Phone<br>
+        <input type="tel" name="phoneNo" id="phoneNo" maxlength="10" /><br> Domain<br>
+        <input type="text" name="domain" id="domain" title="Domain must contain ckpcet.ac.in or
+ckpcet.com" /><br>
+        Email<br>
+        <input type="text" name="email"><br> Retype email<br>
+        <input type="text" name="retype_email"><br> Create a
+        password<br>
+        <input type="password" name="password"><br> Retype password<br>
+        <input type="password" name="retype_password"><br>
+        <!-- <label>
+<input type="checkbox" name="terms">By signing up to {this} you agree to your
+<a href="#service">Terms of Service</a> and <a href="#policy">Privacy Policy</a>
+</label> -->
+        <div class="button">
+            <input type="submit" class="button" value="Submit">
+        </div>
+    </form>
+</body>
+<script src="srcript.js"></script>
+</html>
