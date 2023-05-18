@@ -1,0 +1,139 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+        'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(163, 255, 245);
+    margin: 0px;
+}
+
+#left-plan {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+}
+
+#page-container {
+    margin: 5rem;
+    padding: 2rem;
+    position: relative;
+    background-color: gray;
+    box-shadow: 0px 0px 10px rgb(2, 2, 2);
+    padding-left: 0rem;
+}
+
+#page-left-panel {
+    top: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 50px;
+    background-color: blue;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#page-content {
+    margin: 20px 20px 20px 70px;
+}
+
+#header {
+    display: table;
+    width: 100%;
+}
+
+#logo-container {
+    display: table-cell;
+    text-align: right;
+    width: 200px;
+}
+
+#logo-container img {
+    width: 100%;
+}
+
+#nav-container {
+    display: table-cell;
+    text-align: right;
+    vertical-align: top;
+}
+
+#nav-container ul {
+    list-style-type: none;
+}
+
+#nav-container ul li {
+    display: inline-block;
+}
+
+#nav-container ul li a {
+    color: grey;
+    text-decoration: none;
+    padding: 1em;
+}
+
+#nav-container ul li a:hover {
+    color: blue;
+    background-color: white;
+}
+
+#main {
+    display: table;
+}
+
+#content {
+    display: table-cell;
+    padding: 2em;
+    vertical-align: middle;
+}
+
+#banner {
+    align-content: end;
+    display: table-cell;
+}
+
+#banner img {
+    height: 300px;
+}
+
+#content h2 {
+    color: blue;
+}
+
+#content h1 {
+    font-size: 4em;
+}
+
+a.special {
+    background-color: blue;
+    color: #fff;
+    padding: 1em;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+#features {
+    margin: lem 2em;
+}
+
+.feature {
+    display: table-cell;
+    border-left: 2px solid gray;
+    padding: 5px 20px;
+}
+
+.feature h5 {
+    color: gray;
+    margin: 0.5em 0em;
+    font-variant: small-caps;
+}
+
+.feature h4 {
+    color: blue;
+    margin-top: 0.5em;
+}
+
+.feature p {
+    font-size: 0.7em;
+    color: gray;
+}
