@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 700px;
+   
+   
+   
+  
+}
+.plan_selection{
+    position: absolute;
+    height: 500px;
+    width: 80%;
+    background-color:#EEEEEE;
+    margin:100px 10% 100px 10%;  
+}
+.plan1{
+    height: 340px;
+    width: 20%;
+    border: gray;
+    position: absolute;
+    display: inline-block;
+    margin: 100px 100px ;
+    border-radius: 0px 100px;
+    box-shadow: 1px 1px 10px 5px gray;
+    
+    
+}
+.price{
+    height: 75px;
+    width: 170px;
+    border: 2px solid black;
+    position: relative;
+    background-color: blue;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    border-radius: 0px 75px;
+    margin-top: 5px;
+    margin-left: -35px;
+    margin-bottom: 5px;
+    border: blue;
+}
+
+.table{
+    margin-top: 10px;
+    border: 2px;
+    margin-left:40px;
+    border: none;
+}
+
+.raw1{
+    background-color: rgb(211, 207, 207);
+    padding: 5px;
+    margin: 2px;
+}
+.raw3{
+    background-color: white;
+    padding: 5px;
+    margin: 2px;
+}
+.plan2{
+    height: 340px;
+    width: 20%;
+    border: gray;
+    box-shadow: 1px 1px 10px 5px gray;
+    position: absolute;
+    display: inline-block;
+    margin: 100px 100px 100px 475px;
+    border-radius: 0px 100px;
+    
+}
+.plan3{
+    height: 340px;
+    width: 20%;
+    border: 2px solid black;
+    position: absolute;
+    display: inline-block;
+   margin: 100px 100px 100px 850px;
+    border-radius: 0px 100px;
+    box-shadow: 1px 1px 10px 5px gray;
+    border: gray;
+    
+}
+.plan1 h1{
+    color: blue;
+}
+.plan2 .price{
+    border: green;
+    background-color: green;
+}
+.plan3 .price{
+    border: #E11299;
+    background-color: #E11299
+}
+.plan2 h1{
+    color: green;
+}
+.plan3 h1{
+    color: #E11299;
+}
+.plan1 h3{
+    text-align: right;
+    color: blue;
+    margin-right: 15px;
+}
+.plan2 h3{
+    text-align: right;
+    color: green;
+    margin-right: 15px;
+}
+.plan3 h3{
+    text-align: right;
+    color: #E11299;
+    margin-right: 15px;
+}
