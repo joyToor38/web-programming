@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+</head>
+<body>
+<h1>Form Validation</h1>
+<form action="form_validation.php" method="post">
+<input type="text" name="name" placeholder="Name" required> <br> <br>
+<input type="text" name="address" placeholder="Address" pattern="[a-zA-Z0-9,]+"> <br> <br>
+<input type="text" name="phone" placeholder="Phone" pattern="[0-9]{10}|[0-9]{11}"> <br> <br>
+<input type="text" name="phone" placeholder="Phone" pattern="[0-9]{10}|[0-9]{11}"> <br> <br>
+<input type="text" name="domain" placeholder="Domain" required> <br> <br>
+<input type="email" name="email" placeholder="Email" required><br> <br>
+<input type="password" name="password" placeholder="Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+])[a-zA-Z0-9!@#$%^&*()_+]{8,}$"> <br> <br>
+<input type="password" name="confirm_password" placeholder="Confirm Password" required> <br> <br>
+<input type="submit" value="Submit"> <br> 
+</form>
+<script>
+function validateForm() {
+var name = document.forms["myForm"]["name"].value;
+var address = document.forms["myForm"]["address"].value;
+var phone = document.forms["myForm"]["phone"].value;
+var domain = document.forms["myForm"]["domain"].value;
+var email = document.forms["myForm"]["email"].value;
+var password = document.forms["myForm"]["password"].value;
+var confirmPassword = document.forms["myForm"]["confirm_password"].value;
+
+if (name == "") {
+alert("Please enter your name.");
+return false;
+}
+
+if (!address.match(/^[a-zA-Z0-9,]+$/)) {
+alert("Please enter a valid address.");
+return false;
+}
+
+if (!phone.match(/^[0-9]{10}|[0-9]{11}$/)) {
+alert("Please enter a valid phone number.");
+return false;
+}
+
+if (domain == "") {
+alert("Please enter your domain.");
+return false;
+}
+
+if (!email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/)) {
+alert("Please enter a valid email address.");
+return false;
+}
+
+if (!password.match(/^^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*()_+])[a-zA-Z0-9!@#$%^&*()_+]{8,}$/)) {
+alert("Please enter a valid password.");
+return false;
+}
+
+if (password != confirmPassword) {
+alert("The passwords do not match.");
+return false;
+}
+
+return true;
+}
+</script>
+</body>
+</html>
