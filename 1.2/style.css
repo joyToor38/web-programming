@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap');
+
+body {
+    background-color: rgb(255, 0, 0);
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div#page-container {
+    margin: 5rem;
+    padding: 2rem;
+    position: relative;
+    background-color: rgb(168, 49, 220);
+    box-shadow: 0px 0px 10px rgb(2, 2, 2);
+    padding-left: 0rem;
+}
+
+div#page-left-panel {
+    top: 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 35%;
+    background-color: rgb(230, 111, 40);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+div#page-content {
+    margin: 20px 20px 20px 70px;
+}
+
+div#header {
+    display: table;
+    width: 100%;
+}
+
+div#header-menu {
+    margin: 20px20px20px70px;
+    text-align: justify;
+    vertical-align: top;
+}
+
+div#logo-container {
+    display: table-cell;
+    width: 200px;
+}
+
+div#logo-container img {
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: 100px;
+    margin-left: 45px;
+}
+
+div#page-top-menu {
+    font-size: 13px;
+    text-align: left;
+    padding: 0.5px;
+    width: 325px;
+    position: relative;
+    background-color: rgb(114, 1, 214);
+    margin-left: 75%;
+    border-top-left-radius: 50rem;
+    border-bottom-left-radius: 50rem;
+    border-top-right-radius: 50rem;
+    border-bottom-right-radius: 50rem;
+    box-shadow: 0px 0px 10px rgb(2, 2, 2);
+}
+
+div#nav-container {
+    vertical-align: top;
+}
+
+div#nav-container ul {
+    list-style-type: none;
+}
+
+div#nav-container ul li {
+    display: inline-block;
+}
+
+div#nav-container ul li a {
+    color: rgb(0, 255, 0);
+    text-decoration: none;
+    padding: 1em;
+}
+
+div#nav-container ul li a:hover {
+    color: white;
+}
+
+div#main {
+    text-align: justify;
+}
+
+div#content {
+    padding: 20px;
+    color: whitesmoke;
+    text-align: justify;
+    margin-left: 50%;
+}
+
+div#content h2 {
+    color: rgb(255, 255, 255);
+}
+
+div#content h1 {
+    font-size: 4em;
+}
+
+div#content p {
+    font-size: 0.9em;
+}
+
+a.special {
+    background-color: rgb(138, 43, 226);
+    color: #fff;
+    border: ivory solid;
+    padding: 1em;
+    border-radius: 50px;
+    text-decoration: none;
+    text-shadow: 0px 0px 5px black;
+}
+
+a:hover {
+    color: blue;
+}
+
+footer {
+    color: rgb(255, 214, 184);
+    font-family: 'Times New Roman', Times, serif;
+}
